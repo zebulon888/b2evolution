@@ -24,7 +24,7 @@ RUN wget https://github.com/b2evolution/b2evolution/archive/master.zip \
 # create the _base_config.php file needed for the b2evolution installation
 RUN cp b2evolution/conf/_basic_config.template.php b2evolution/conf/_basic_config.php
 
-COPY rootfs/
+# COPY rootfs/
 
 # set directory permissions
 RUN 	mkdir /srv/www/nginx && mkdir /var/log/nginx \
