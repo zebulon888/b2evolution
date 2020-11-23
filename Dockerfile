@@ -14,7 +14,7 @@ ENV TZ="Europe/Amsterdam"
 WORKDIR /srv/www/htdocs
 
 # clean original
-RUN rm /etc/nginx/ssl/vhost1.*
+# RUN rm /etc/nginx/ssl/vhost1.*
 
 
 # get b2evolution and extract it
