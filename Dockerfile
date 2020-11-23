@@ -18,7 +18,7 @@ WORKDIR /srv/www/htdocs
 
 
 # get b2evolution and extract it
-RUN wget https://github.com/b2evolution/b2evolution/archive/master.zip \
+RUN /usr/bin/wget https://github.com/b2evolution/b2evolution/archive/master.zip \
     && unzip b2evolution-master.zip && mv b2evolution-master b2evolution && rm b2evolution-master.zip
     
 # create the _base_config.php file needed for the b2evolution installation
